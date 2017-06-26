@@ -50,7 +50,17 @@ class App extends React.Component {
         </div>
       </div>
     );
+      </div>);
+>>>>>>> Implement static front-end react mock-up
   }
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
+
+
+
+<div className="nav-bar">
+<h1>Exquisite Corpse</h1>
+<a>myGallery</a>
+<a>signIn</a>
+</div>
