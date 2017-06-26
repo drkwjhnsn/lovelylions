@@ -4,7 +4,10 @@ import DrawCanvas from './components/DrawCanvas.jsx';
 import SignIn from './components/SignIn.jsx';
 import Gallery from './components/Gallery.jsx';
 import ReactDOM from 'react-dom';
+<<<<<<< HEAD
 
+=======
+>>>>>>> Implement static front-end react mock-up
 
 class App extends React.Component {
   constructor(props) {
@@ -36,6 +39,7 @@ class App extends React.Component {
 
 
   render() {
+<<<<<<< HEAD
     return (
       <div>
         <ExquisiteWriter />
@@ -45,11 +49,27 @@ class App extends React.Component {
             <a href="#" onClick={this.switch}>canvas</a>
             <a href="#" onClick={this.switch}>myGallery</a>
             <a href="#" onClick={this.switch}>signIn</a>
+=======
+    return (<div>
+      <div className="foreground">
+          <ExquisiteWriter />
+          <div className="container">
+            <div className="nav-bar">
+              <h1>Exquisite Corpse</h1>
+              <a href="#" onClick={this.switch}>canvas</a>
+              <a href="#" onClick={this.switch}>myGallery</a>
+              <a href="#" onClick={this.switch}>signIn</a>
+            </div>
+            {this.state.currentView}
+>>>>>>> Implement static front-end react mock-up
           </div>
           {this.state.currentView}
         </div>
+<<<<<<< HEAD
       </div>
     );
+=======
+>>>>>>> Implement static front-end react mock-up
       </div>);
 >>>>>>> Implement static front-end react mock-up
   }
