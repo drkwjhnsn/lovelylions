@@ -76,11 +76,3 @@ class App extends React.Component {
 }
 
 ReactDOM.render(<App />, document.getElementById('app'));
-
-
-
-<div className="nav-bar">
-<h1>Exquisite Corpse</h1>
-<a>myGallery</a>
-<a>signIn</a>
-</div>
