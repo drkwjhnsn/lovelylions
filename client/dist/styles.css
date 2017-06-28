@@ -59,7 +59,7 @@ canvas {
   background-size: cover;
 }
 
-.draw-canvas div {
+.button-cluster {
   display: table;
   margin: 5px auto;
 }

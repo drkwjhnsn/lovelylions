@@ -91,10 +91,10 @@ class DrawCanvas extends React.Component {
           onMouseMove={this.drawing.bind(this)} onMouseDown={this.startDraw.bind(this)}
           onMouseUp={this.endDraw.bind(this)} id='canvas' width={this.width} height={this.height}>
         </canvas>
-        <div>
-        <input onClick={this.onEraserClick.bind(this)} type="button" value="Eraser"></input>
-        <input onClick={this.onDrawClick.bind(this)} type="button" value="Draw"></input>
-        <input onClick={this.clearCanvas.bind(this)} type='button' value="Clear Canvas"></input>
+        <div className="button-cluster">
+          <input onClick={this.onEraserClick.bind(this)} type="button" value="Eraser"></input>
+          <input onClick={this.onDrawClick.bind(this)} type="button" value="Draw"></input>
+          <input onClick={this.clearCanvas.bind(this)} type='button' value="Clear Canvas"></input>
         </div>
       </div>
       )

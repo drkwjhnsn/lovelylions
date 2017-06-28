@@ -5,9 +5,13 @@ import SignIn from './components/SignIn.jsx';
 import Gallery from './components/Gallery.jsx';
 import ReactDOM from 'react-dom';
 <<<<<<< HEAD
+<<<<<<< HEAD
 
 =======
 >>>>>>> Implement static front-end react mock-up
+=======
+import Composite from './components/Composite.jsx';
+>>>>>>> Add Composite/results component
 
 class App extends React.Component {
   constructor(props) {
@@ -15,7 +19,7 @@ class App extends React.Component {
     this.state = {
       currentView: <DrawCanvas />,
       pics: [
-        {title: 'Title', head: {path:'paper.png', artist: 'artist1'}, torso: {path: 'paper.png', artist: 'artist2'}, legs: {path: 'paper.png', artist: 'artist3'}},
+        {title: 'Title', head: {path:'head.png', artist: 'artist1'}, torso: {path: 'torso.png', artist: 'artist2'}, legs: {path: 'legs.png', artist: 'artist3'}},
         {title: 'Title', head: {path:'paper.png', artist: 'artist1'}, torso: {path: 'paper.png', artist: 'artist2'}, legs: {path: 'paper.png', artist: 'artist3'}},
         {title: 'Title', head: {path:'paper.png', artist: 'artist1'}, torso: {path: 'paper.png', artist: 'artist2'}, legs: {path: 'paper.png', artist: 'artist3'}},
         {title: 'Title', head: {path:'paper.png', artist: 'artist1'}, torso: {path: 'paper.png', artist: 'artist2'}, legs: {path: 'paper.png', artist: 'artist3'}}
@@ -24,6 +28,12 @@ class App extends React.Component {
     this.switch = this.switch.bind(this);
   }
 
+<<<<<<< HEAD
+=======
+  componentDidMount() {
+    this.setState({currentView: <Composite pic={this.state.pics[0]} />});
+  }
+>>>>>>> Add Composite/results component
 
   switch(e) {
     e.preventDefault();
