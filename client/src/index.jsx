@@ -17,7 +17,7 @@ class App extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      currentView: <DrawCanvas />,
+      currentView: <DrawCanvas generateImage={this.generateImage.bind(this)}/>,
       pics: [
         {title: 'Title', head: {path:'head.png', artist: 'artist1'}, torso: {path: 'torso.png', artist: 'artist2'}, legs: {path: 'legs.png', artist: 'artist3'}},
         {title: 'Title', head: {path:'paper.png', artist: 'artist1'}, torso: {path: 'paper.png', artist: 'artist2'}, legs: {path: 'paper.png', artist: 'artist3'}},
@@ -26,12 +26,13 @@ class App extends React.Component {
       ]
     };
     this.switch = this.switch.bind(this);
+    this.generateImage = this.generateImage.bind(this);
   }
 
 <<<<<<< HEAD
 =======
   componentDidMount() {
-    this.setState({currentView: <Composite pic={this.state.pics[0]} />});
+    // this.setState({currentView: <Composite pic={this.state.pics[0]} />});
   }
 >>>>>>> Add Composite/results component
 
@@ -41,12 +42,25 @@ class App extends React.Component {
     if (targetVal === 'signIn') {
       this.setState({currentView: <SignIn />});
     } else if (targetVal === 'canvas') {
-      this.setState({currentView: <DrawCanvas />});
+      this.setState({currentView: <DrawCanvas generateImage={this.generateImage.bind(this)}/>});
     } else if (targetVal === 'myGallery') {
       this.setState({currentView: <Gallery pics={this.state.pics} />});
     }
   }
 
+  generateImage(userImage) {
+    var userPart = Object.keys(userImage)[0];
+    // TODO: ajax GET request to server with "param: userPart" path something like
+    //    /generate/?Part=head
+    // should return a pic object with complementing pieces
+
+    // dummy ajax return vvvvvv
+    var returnedImgObj = {title: 'Title', head: {path:'head.png', artist: 'artist1'}, torso: {path: 'torso.png', artist: 'artist2'}, legs: {path: 'legs.png', artist: 'artist3'}};
+    // dummy ajax return ^^^^^^
+
+    returnedImgObj[userPart] = userImage[userPart];
+    this.setState({currentView: <Composite pic={returnedImgObj} userImage={userImage} generateImage={this.generateImage}/>});
+  }
 
   render() {
 <<<<<<< HEAD
