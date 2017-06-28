@@ -1,0 +1,83 @@
+body {
+  margin: 0px;
+  font-family: 'Work Sans', sans-serif;
+
+}
+
+.foreground {
+  margin: 2% 5%;
+}
+
+.exquisite-writer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  z-index: -3;
+  overflow: hidden;
+  background-color: #fffdf9;
+  color: #DDDDDD;
+  margin: 5px;
+  margin-top: -10;
+  margin-bottom: 0;
+  text-align: justify;
+  font-family: 'Raleway Dots', cursive;
+}
+
+.nav-bar {
+  width: 900px;
+  margin: 0 auto;
+  color: #050505;
+  text-align: left;
+  background-color: rgba(255,255,255,.5);
+  padding: 10px;
+}
+
+.nav-bar h1 {
+  display: inline;
+  font-size: 36pt;
+}
+
+.nav-bar a {
+  margin: -5px 8px;
+  font-size: 16pt;
+  color: #050505;
+  float: right;
+}
+
+.main-component {
+  position: relative;
+}
+
+canvas {
+  display: flex;
+  margin: 0 auto;
+  box-shadow: 0px 30px 40px rgba(0,0,0,.1);
+  border-radius: 9px;
+  background-image: url("./paper.png");
+  background-size: cover;
+}
+
+.button-cluster {
+  display: table;
+  margin: 5px auto;
+}
+
+.sign-in {
+
+}
+
+.gallery {
+
+}
+
+.gallery-pic {
+  display: inline-block;
+  padding: 20px;
+}
+
+.pic-part {
+  max-width: 100%;
+  max-height: auto;
+}
