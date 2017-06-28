@@ -9,7 +9,7 @@ const cn = {
     host: 'localhost',
     port: 5432,
     database: 'mydb',
-    user: 'kenlyhui',
+    user: 'derek',
     password: ''
 };
 const db = pgp(cn);
@@ -71,7 +71,7 @@ exports.getTwoImages = function(part, callback) {
 
   console.log(getRandomImage('head'));
 
-  // iterate diff 
+  // iterate diff
   diff.forEach((each) => {
     let obj = {};
     getRandomImage(each, (data) => {
@@ -85,15 +85,7 @@ exports.getTwoImages = function(part, callback) {
   .catch((err) => {
     callback(err);
   });
-  
+
 
 };
 // {obj{head: abc_path}, obj{torso: def_path}}
-
-
-
-
-
-
- 
- 

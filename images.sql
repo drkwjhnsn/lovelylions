@@ -1,3 +1,4 @@
+
 CREATE TABLE artist(
    id      SERIAL PRIMARY KEY,
    username    VARCHAR(20) NOT NULL,
