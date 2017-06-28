@@ -40,6 +40,9 @@ class App extends React.Component {
 
   render() {
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> Integrate canvas
     return (
       <div>
         <ExquisiteWriter />
@@ -49,6 +52,7 @@ class App extends React.Component {
             <a href="#" onClick={this.switch}>canvas</a>
             <a href="#" onClick={this.switch}>myGallery</a>
             <a href="#" onClick={this.switch}>signIn</a>
+<<<<<<< HEAD
 =======
     return (<div>
       <div className="foreground">
@@ -72,6 +76,13 @@ class App extends React.Component {
 >>>>>>> Implement static front-end react mock-up
       </div>);
 >>>>>>> Implement static front-end react mock-up
+=======
+          </div>
+          {this.state.currentView}
+        </div>
+      </div>
+    );
+>>>>>>> Integrate canvas
   }
 }
 
